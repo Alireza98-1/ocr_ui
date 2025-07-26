@@ -1,0 +1,106 @@
+# بایت‌کد و فایل‌های کامپایل شده پایتون
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# پوشه‌های محیط مجازی
+# virtual environment folders
+venv/
+env/
+.venv/
+__pypackages__/
+
+# فایل‌های مربوط به پکیج‌ها و بیلد
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# فایل‌های موقت و لاگ‌ها
+# Temp files and logs
+*.log
+*.log.*
+logs/
+*.tmp
+
+# فایل‌های مربوط به تنظیمات IDE و ویرایشگرها
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# فایل‌های مربوط به سیستم‌عامل
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# فایل‌های محلی و تنظیمات محرمانه
+# Local settings and secrets
+.env
+.env.*
+*.env
+*.env.*
+!*.env.example
+!*.env.template
+
+# فایل‌های مربوط به تست
+# Test-related files
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+
+# =================================================
+# بخش مخصوص این پروژه (بسیار مهم)
+master_config.json
+.env
+/ocr_env/
+/weights/
+# =================================================
+
+# پوشه خروجی‌های دیباگ
+# Debug output folder
+/debug/
+
+# مدل‌های یادگیری ماشین (که نباید در گیت باشند)
+# Machine Learning Models (Should NOT be in Git)
+*.pt
+*.pth
+*.onnx
+*.pb
+*.h5
+/models/
+/weights/
+
+# دیتاست‌ها و فایل‌های حجیم
+# Datasets and large files
+/data/
+*.zip
+*.rar
+*.7z
+/env_ocr
+/weights
