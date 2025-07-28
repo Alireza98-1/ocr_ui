@@ -1,0 +1,40 @@
+{
+    "debug": true,
+    "debug_output_path": "debug_results",
+    "detection": {
+        "device": "cpu",
+        "word_detect": {
+            "path": "weights/word_detection.pt",
+            "conf": 0.2,
+            "iou": 0.5,
+            "merging_iou": 0.5,
+            "mask_dilation": 0,
+            "batch": 8
+        },
+        "line_detect": {
+            "path": "weights/line_detection.pt",
+            "conf": 0.2,
+            "iou": 0.5,
+            "batch": 8
+        },
+        "parallel_processing": {
+            "enabled": true,
+            "max_workers": 4,
+            "max_batch_size": 8,
+            "memory_limit_mb": 8192
+        },
+        "debug": true
+    },
+    "recognition": {
+        "device": "cpu",
+        "checkpoint": "weights/recognition_model.ckpt",
+        "batch_size": 64,
+        "min_conf": 0.3,
+        "debug": true
+    },
+    "pipeline": {
+        "debug": true,
+        "enable_recognition": true
+    },
+    "valid_ocr_formats": [".jpeg", ".jpg", ".png", ".pdf"]
+}
